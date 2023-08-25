@@ -6,17 +6,23 @@
 
         <style>
 
+* {
+  box-sizing: border-box;
+}
+
             .row{
-                width:10px;
-                margin: 10px auto px auto ;
+                width:400px;
+                margin:auto;
             }
             .image-container {
-                display: table-cell;
-                vertical-align:middle;
-                padding: 30px;  
+                display: block;
+                vertical-align: center;
+                padding: 60px;  
+            
             }
 
             body{
+                text-align: center;
                 background: rgb(183,148,227);
                 background: radial-gradient(circle, rgba(183,148,227,1) 0%, rgba(148,187,233,1) 100%);
             }
@@ -36,9 +42,7 @@
 </head>
    
 <body>
-        
-        <div class="row">
-            <!-- This is a comment. It won't appear in your page -->
+         <!-- This is a comment. It won't appear in your page -->
             <!-- This long line contains the code for the image roll 
                 over which swaps in an alternative image. You need to select the extra 
                 code and paste it in for each image. Make sure the page still works after pasting. 
@@ -46,46 +50,48 @@
                 the rollover version of icons and sounds.d
             -->
 
-
-
-            <div class="image-container"><img id="wing1" src="img/Asset 1.png" onmouseover="this.src='img/Asset 1.png';" onmouseout="this.src='img/Asset 2.png';" width="150 px" height="200 "></div>
-            <div class="image-container"><img id="wing2" src="img/Asset 2.png" onmouseover="this.src='img/Asset 2.png';" onmouseout="this.src='img/Asset 2.png';" width="130 px" height="210 "></div>
-            <div class="image-container"><img id="wing3" src="img/Asset 3.png" onmouseover="this.src='img/Asset 3.png';" onmouseout="this.src='img/Asset 3.png';" width="150 px" height="200 "></div>
+        <div class="row">
+            <div class="image-container"><img id="wings1" src="img/1.png" onmouseover="this.src='img/wings1.png';" onmouseout="this.src='img/1.png';"width="339.9888 px" height="335.3223 px  "></div>
+            <div class="image-container"><img id="wings2" src="img/2.png" onmouseover="this.src='img/wings2.png';" onmouseout="this.src='img/2.png';"width="339.9888 px" height="335.3223 px  "></div>
+            <div class="image-container"><img id="wings3" src="img/3.png" onmouseover="this.src='img/wings3.png';" onmouseout="this.src='img/3.png';"width="339.9888 px" height="335.3223 px  "></div>
         </div>
 
-        <div class="row">
-            <div class="image-container"><img id="wing4" src="img/Asset 4.png" onmouseover="this.src='img/Asset 4.png';" onmouseout="this.src='img/Asset 4.png';" width="150 px" height="200 "></div>
-            <div class="image-container"><img id="wing5" src="img/Asset 5.png" onmouseover="this.src='img/Asset 5.png';" onmouseout="this.src='img/Asset 5.png';" width="150 px" height="200 "></div>
-            <div class="image-container"><img id="wing6" src="img/Asset 6.png" onmouseover="this.src='img/Asset 6.png';" onmouseout="this.src='img/Asset 6.png';" width="150 px" height="200 "></div>
-        </div>
 
         <div class="row">
-            <div class="image-container"><img id="wing7" src="img/Asset 7.png" onmouseover="this.src='img/Asset 7.png';" onmouseout="this.src='img/Asset 7.png';" width="150 px" height="200 "></div>
-            <div class="image-container"><img id="wing8" src="img/Asset 8.png" onmouseover="this.src='img/Asset 8.png';" onmouseout="this.src='img/Asset 8.png';" width="150 px" height="200 "></div>
-            <div class="image-container"><img id="wing9" src="img/Asset 9.png" onmouseover="this.src='img/Asset 9.png';" onmouseout="this.src='img/Asset 9.png';" width="150 px" height="200 "></div>
+            <div class="image-container"><img id="wings4" src="img/4.png" onmouseover="this.src='img/wings4.png';" onmouseout="this.src='img/4.png';"width="339.9888 px" height="335.3223 px  "></div>
+            <div class="image-container"><img id="wings5" src="img/5.png" onmouseover="this.src='img/wings5.png';" onmouseout="this.src='img/5.png';"width="339.9888 px" height="335.3223 px  "></div>
+            <div class="image-container"><img id="wings6" src="img/6.png" onmouseover="this.src='img/wings6.png';" onmouseout="this.src='img/6.png';"width="339.9888 px" height="335.3223 px  "></div>
+        </div>
+
+
+        <div class="row">
+            <div class="image-container"><img id="wings7" src="img/7.png" onmouseover="this.src='img/wings7.png';" onmouseout="this.src='img/7.png';"width="339.9888 px" height="335.3223 px  "></div>
+            <div class="image-container"><img id="wings8" src="img/8.png" onmouseover="this.src='img/wings8.png';" onmouseout="this.src='img/8.png';"width="339.9888 px" height="335.3223 px  "></div>
+            <div class="image-container"><img id="wings9" src="img/9.png" onmouseover="this.src='img/wings9.png';" onmouseout="this.src='img/9.png';"width="339.9888 px" height="335.3223 px  "></div>
         </div>
 
         <script>
-            var sound1 = new buzz.sound("sound/glitch1.mp3");
-            var sound2 = new buzz.sound("sound/glitch2.mp3");
-            var sound3 = new buzz.sound("sound/glitch3.mp3");
-            var sound4 = new buzz.sound("sound/glitch4.mp3");
-            var sound5 = new buzz.sound("sound/glitch5.mp3");
-            var sound6 = new buzz.sound("sound/glitch6.mp3");
-            var sound7 = new buzz.sound("sound/glitch7.mp3");
-            var sound8 = new buzz.sound("sound/glitch8.mp3");
-            var sound9 = new buzz.sound("sound/glitch9.mp3");
+            var sound1 = new buzz.sound("sound/official 1.mp3");
+            var sound2 = new buzz.sound("sound/official 2.mp3");
+            var sound3 = new buzz.sound("sound/official 3.mp3");
+            var sound4 = new buzz.sound("sound/official 4.mp3");
+            var sound5 = new buzz.sound("sound/official 5.mp3");
+            var sound6 = new buzz.sound("sound/official 6.mp3");
+            var sound7 = new buzz.sound("sound/official 7.mp3");
+            var sound8 = new buzz.sound("sound/official 8.mp3");
+            var sound9 = new buzz.sound("sound/official 9.mp3");
 
             window.onload = function() {
-                document.getElementById('donut1').addEventListener('click', function () {sound1.play();});
-                document.getElementById('donut2').addEventListener('click', function () {sound2.play();});
-                document.getElementById('donut3').addEventListener('click', function () {sound3.play();});
-                document.getElementById('donut4').addEventListener('click', function () {sound4.play();});
-                document.getElementById('donut5').addEventListener('click', function () {sound5.play();});
-                document.getElementById('donut6').addEventListener('click', function () {sound6.play();}); 
-                document.getElementById('donut7').addEventListener('click', function () {sound7.play();});
-                document.getElementById('donut8').addEventListener('click', function () {sound8.play();});
-                document.getElementById('donut9').addEventListener('click', function () {sound9.play();});
+                document.getElementById('wings1').addEventListener('click', function () {sound1.play();});
+                document.getElementById('wings2').addEventListener('click', function () {sound2.play();});
+                document.getElementById('wings3').addEventListener('click', function () {sound3.play();});
+                document.getElementById('wings4').addEventListener('click', function () {sound4.play();});
+                document.getElementById('wings5').addEventListener('click', function () {sound5.play();});
+                document.getElementById('wings6').addEventListener('click', function () {sound6.play();});
+                document.getElementById('wings7').addEventListener('click', function () {sound7.play();});
+                document.getElementById('wings8').addEventListener('click', function () {sound8.play();});
+                document.getElementById('wings9').addEventListener('click', function () {sound9.play();});
+              
             };
         </script>
 
